@@ -8,6 +8,56 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head>
+        <title>Haffi - Making WhatsApp for Business Alot Easier</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
+        <meta
+          name="description"
+          content="Haffi - Tools to make booking your customers on WhatsApp Business a lot easier, saving you time, and time is money"
+        />
+        <meta
+          name="keywords"
+          content="Haffi, Haffitalk, WhatsApp Chat Bot, Conversation Automation, Messaging Bot, Marketing, Innovative Conversations, Automated Interaction, Caribbean WhatsApp Business Bot "
+        />
+
+        <meta
+          property="og:title"
+          content="Haffi - Making WhatsApp for Business Alot Easier"
+        />
+        <meta
+          property="og:description"
+          content="Haffi - Tools to make booking your customers on WhatsApp Business a lot easier, saving you time, and time is money"
+        />
+        <meta property="og:url" content="https://haffi.one" />
+        <meta property="og:site_name" content="Haffi" />
+        <meta property="og:image" content="social.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Haffi - Your tools for WhatsApp for Business"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Haffi - Your tools for WhatsApp for Business"
+        />
+        <meta
+          name="twitter:description"
+          content="Haffi - Tools to make booking your customers on WhatsApp Business a lot easier, saving you time, and time is money"
+        />
+        <meta name="twitter:image" content="social.png" />
+        <meta
+          name="twitter:image:alt"
+          content="Haffi - Your tools for Business for WhatsApp"
+        />
+      </head>
       <body>
         <nav className="max-w-[820px] mx-auto py-4 md:py-7 px-3 md:px-0 flex flex-row justify-between sticky top-0 bg-white/90 backdrop-blur-md">
           <Image alt="Haffi Logo" src="/HAFFI.svg" width={139} height={46} />

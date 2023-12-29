@@ -1,6 +1,6 @@
 # Haffi Site
 
-Marketing research website for HAFFI.one
+Marketing research website for HAFFI.one. This is mostly for validating and research.
 
 ## How to run
 
