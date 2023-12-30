@@ -64,9 +64,9 @@ export default function RootLayout({
           <div className="max-w-[820px] mx-auto px-3 md:px-0">
             <section>
               <div className="w-full flex flex-col gap-2 justify-center">
-                <h1 className="text-green-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
+                <h2 className="text-green-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
                   Free until March 2024
-                </h1>
+                </h2>
                 <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
                   The Secret weapons for your WhatsApp workflow
                 </p>
