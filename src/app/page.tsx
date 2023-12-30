@@ -45,8 +45,8 @@ const Page = () => (
                 height={120}
                 className="inline"
               />
-              <p className="text-white text-[20px] md:text-[22px] mt-5 font-semibold">
-                Customers booking using WhatsApp interactive features
+              <p className="text-gray-dark-1 text-[20px] md:text-[22px] mt-5 font-semibold">
+                Customers will use WhatsApp new interactive features
               </p>
             </div>
           </div>
@@ -59,8 +59,9 @@ const Page = () => (
                 height={120}
                 className="inline"
               />
-              <p className="text-white text-[20px] md:text-[22px] mt-5 font-semibold">
-                You will continue to uses the tools that you love
+              <p className="text-gray-dark-1 text-[20px] md:text-[22px] mt-5 font-semibold">
+                You will continue to uses the tools that you love for your
+                business
               </p>
             </div>
           </div>
@@ -68,58 +69,26 @@ const Page = () => (
       </div>
     </section>
 
-    <section id="section-2">
-      <div className="flex flex-col-reverse gap-10 py-[60px]">
+    <section id="section-3">
+      <div className="flex flex-col gap-10 py-[60px]">
         <div className="w-full flex flex-col gap-2 justify-center">
-          <p className="text-gray-dark-2 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-            Imagine the time you&apos;ve wasted just, Texting...
-          </p>
           <h1 className="text-gray-dark-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
             No more back and forth on WhatsApp
           </h1>
+          <p className="text-gray-dark-2 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
+            Imagine the time you&apos;ve wasted just, Texting...
+          </p>
         </div>
 
         <div className="mx-auto max-w-[450px] flex-shrink-0">
-          <div className="border-[8px] border-green-1 rounded-[35px] overflow-hidden shadow-2xl">
-            <div className="w-full pt-8 pb-3.5 px-3.5 bg-green-1 flex flex-row items-center">
-              <Image
-                alt="Profile Image"
-                src="/profile-image.png"
-                width={45}
-                height={45}
-                className="bg-white rounded-full"
-              />
-              <div className="ml-3">
-                <p className="text-xl font-semibold text-white leading-5">
-                  HAFFI
-                </p>
-                <p className="text-white leading-5 text-sm opacity-80">
-                  Online
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-6 py-5 px-2">
-              <div className="w-full flex flex-row justify-end">
-                <div className="text-lg py-3.5 px-5 bg-[#EADFDF] rounded-3xl inline-block">
-                  <p>Really?</p>
-                </div>
-              </div>
-
-              <div className="w-full flex flex-row justify-start">
-                <div className="text-lg py-3.5 px-5 bg-green-1 rounded-3xl inline-block">
-                  <p>Yes</p>
-                </div>
-              </div>
-              <div className="w-full flex flex-row justify-start">
-                <div className="text-lg py-3.5 px-5 bg-green-1 rounded-3xl inline-block">
-                  <p>And We made it easy for you to get started ✨</p>
-                </div>
-              </div>
-              <div className="w-full flex flex-row justify-end">
-                <p className="text-[90px] leading-[90px]">🤩</p>
-              </div>
-            </div>
+          <div className="border-[8px] border-green-1 rounded-[35px] overflow-hidden ">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt="WhatsApp Workflow Animations"
+              src="/whatsapp-workflow.gif"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
