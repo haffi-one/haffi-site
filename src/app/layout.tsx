@@ -8,9 +8,7 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>
-          Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business
-        </title>
+        <title>Haffi for WhatsApp Business</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
         <meta
