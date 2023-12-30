@@ -17,20 +17,17 @@ export default function RootLayout({
         />
         <meta
           name="description"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta
           name="keywords"
           content="Haffi, Haffi, haffi chat, Booking App, WhatsApp, booking, appointment, Appointment Booking, WhatsApp Marketing, whatsapp market automation, WhatsApp Business Web, WhatsApp Web Business, free whatsapp business api, WA Business Web, Whatsapp Business automation, Automated WhatsApp messages, Automatically reply on WhatsApp, WhatsApp Booking System, Book appointments On WhatsApp, Whatsapp business greeting message, Broadcast message on whatsapp business, WhatsApp booking tool, Caribbean business software, Broadcast message on whatsapp business"
         />
 
-        <meta
-          property="og:title"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
-        />
+        <meta property="og:title" content="Haffi for WhatsApp Business" />
         <meta
           property="og:description"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta property="og:url" content="https://haffi.one" />
         <meta property="og:site_name" content="Haffi" />
@@ -39,22 +36,19 @@ export default function RootLayout({
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
-        />
+        <meta name="twitter:title" content="Haffi for WhatsApp Business" />
         <meta
           name="twitter:description"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta name="twitter:image" content="social.png" />
         <meta
           name="twitter:image:alt"
-          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
       </head>
       <body>
