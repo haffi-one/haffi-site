@@ -6,11 +6,11 @@ const Page = () => (
       <div className="flex flex-col-reverse md:flex-row py-[60px] md:pt-[110px] gap-10">
         <div className="w-full flex flex-col gap-2">
           <h1 className="text-gray-dark-1 font-bold text-center text-[36px] leading-[44px] md:text-left md:text-[55px] md:leading-[70px]">
-            Ever just wish it was easier to book customers?
+            Struggling with missed appointments and chaotic booking?
           </h1>
           <p className="text-gray-dark-2 text-center text-[20px] leading-[29px] md:text-left md:text-[22px] md:leading-[30px]">
-            We made booking with your customers through WhatsApp easier. And we
-            really mean it.
+            From frantic messages to effortless bookings, doubling your
+            appointments and saving you 2 hours per week.
           </p>
         </div>
         <div className="flex-shrink-0 text-center">
@@ -28,11 +28,12 @@ const Page = () => (
     <section id="section-1">
       <div className="flex flex-col py-[60px] gap-12">
         <div className="w-full flex flex-col gap-2">
-          <h1 className="text-gray-dark-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
-            Easy for <b>YOU</b> and your <b>CUSTOMERS</b>
-          </h1>
+          <h2 className="text-gray-dark-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
+            Effortless Booking for Everyone
+          </h2>
           <p className="text-gray-dark-2 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-            We know how hard it is to use new things.
+            Designed and crafted to make it easy for both you and your customers
+            to hit the ground running right away
           </p>
         </div>
         <div className="w-full flex flex-col md:flex-row gap-5">
@@ -46,7 +47,9 @@ const Page = () => (
                 className="inline"
               />
               <p className="text-gray-dark-1 text-[20px] md:text-[22px] mt-5 font-semibold">
-                Customers will use WhatsApp new interactive features
+                Customers will experience new interactive features like
+                appointment scheduling, reminders, and confirmations, all within
+                WhatsApp.
               </p>
             </div>
           </div>
@@ -60,8 +63,9 @@ const Page = () => (
                 className="inline"
               />
               <p className="text-gray-dark-1 text-[20px] md:text-[22px] mt-5 font-semibold">
-                You will continue to uses the tools that you love for your
-                business
+                Businesses do not need to switch platforms! HAFFI.ONE integrates
+                seamlessly with the tools you already love, like your calendar,
+                CRM, or booking system.
               </p>
             </div>
           </div>
@@ -72,11 +76,12 @@ const Page = () => (
     <section id="section-3">
       <div className="flex flex-col gap-10 py-[60px]">
         <div className="w-full flex flex-col gap-2 justify-center">
-          <h1 className="text-gray-dark-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
-            No more back and forth on WhatsApp
-          </h1>
+          <h2 className="text-gray-dark-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
+            Less texting, more action
+          </h2>
           <p className="text-gray-dark-2 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-            Imagine the time you&apos;ve wasted just, Texting...
+            Imagine saving 20 hours per week from endless booking messages on
+            WhatsApp.
           </p>
         </div>
 

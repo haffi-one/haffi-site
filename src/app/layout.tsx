@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +8,9 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>Haffi - Making WhatsApp for Business Alot Easier</title>
+        <title>
+          Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business
+        </title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
         <meta
@@ -18,20 +19,20 @@ export default function RootLayout({
         />
         <meta
           name="description"
-          content="Haffi - Tools to make booking your customers on WhatsApp Business a lot easier, saving you time, and time is money"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta
           name="keywords"
-          content="Haffi, Haffitalk, WhatsApp Chat Bot, Conversation Automation, Messaging Bot, Marketing, Innovative Conversations, Automated Interaction, Caribbean WhatsApp Business Bot "
+          content="Haffi, Haffi, haffi chat, Booking App, WhatsApp, booking, appointment, Appointment Booking, WhatsApp Marketing, whatsapp market automation, WhatsApp Business Web, WhatsApp Web Business, free whatsapp business api, WA Business Web, Whatsapp Business automation, Automated WhatsApp messages, Automatically reply on WhatsApp, WhatsApp Booking System, Book appointments On WhatsApp, Whatsapp business greeting message, Broadcast message on whatsapp business, WhatsApp booking tool, Caribbean business software, Broadcast message on whatsapp business"
         />
 
         <meta
           property="og:title"
-          content="Haffi - Making WhatsApp for Business Alot Easier"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta
           property="og:description"
-          content="Haffi - Tools to make booking your customers on WhatsApp Business a lot easier, saving you time, and time is money"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta property="og:url" content="https://haffi.one" />
         <meta property="og:site_name" content="Haffi" />
@@ -40,22 +41,22 @@ export default function RootLayout({
         <meta property="og:image:height" content="630" />
         <meta
           property="og:image:alt"
-          content="Haffi - Your tools for WhatsApp for Business"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Haffi - Your tools for WhatsApp for Business"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta
           name="twitter:description"
-          content="Haffi - Tools to make booking your customers on WhatsApp Business a lot easier, saving you time, and time is money"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
         <meta name="twitter:image" content="social.png" />
         <meta
           name="twitter:image:alt"
-          content="Haffi - Your tools for Business for WhatsApp"
+          content="Haffi: Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
       </head>
       <body>
@@ -72,10 +73,18 @@ export default function RootLayout({
             <section>
               <div className="w-full flex flex-col gap-2 justify-center">
                 <h1 className="text-green-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
-                  Free for the first 3 months
+                  Free until March 2024
                 </h1>
                 <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-                  Get rid of us if we don&apos;t help your business
+                  The Secret weapons for your WhatsApp workflow
+                </p>
+                <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
+                  Automated reminders
+                  <br />
+                  Interactive WhatsApp Experience
+                  <br />
+                  Calendar integration <br />
+                  and much, much more.
                 </p>
               </div>
               <div className="my-10 text-center">
