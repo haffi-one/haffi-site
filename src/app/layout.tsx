@@ -85,17 +85,18 @@ export default function RootLayout({
           <div className="max-w-[820px] mx-auto px-3 md:px-0">
             <section>
               <div className="w-full flex flex-col gap-2 justify-center">
-                <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-                  The Secret weapons for your WhatsApp workflow
-                </p>
                 <h2 className="text-green-1 font-bold text-center text-[36px] leading-[44px] md:text-[55px] md:leading-[70px]">
                   Free until March 2024
                 </h2>
-
-                <p className="text-green-1 text-center text-[17px] md:text-[20px] md:leading-[29px]">
-                  Automated customer reminders
+                <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
+                  The Secret weapons for your WhatsApp workflow
+                </p>
+                <p className="text-green-1 text-center text-[17px] leading-[30px] md:text-[20px] md:leading-[40px]">
+                  Schedule appointments & send reminders 24/7
                   <br />
-                  Easy booking management
+                  Verify payments instantly with screenshots
+                  <br />
+                  Manage bookings & customers all in one place
                   <br />
                   Interactive WhatsApp Experience
                   <br />
@@ -108,18 +109,15 @@ export default function RootLayout({
                   href="/join-waitlist"
                   className="transition-all ease-in-out delay-150 border-2 border-green-1 bg-gray-dark-1 text-green-1 hover:bg-green-1 hover:text-gray-dark-1 text-2xl font-semibold py-3 px-7 rounded-full inline-block"
                 >
-                  Join Waitlist
+                  Join The Waitlist
                 </a>
               </div>
               <div className="w-full flex flex-col gap-2 justify-center">
-                <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-                  Want to learn more?
-                </p>
                 <a
                   href="/faq"
                   className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px] underline"
                 >
-                  Read our FAQ
+                  Frequently Asked Questions
                 </a>
               </div>
               <p className="text-green-1 text-center opacity-80 mt-10">

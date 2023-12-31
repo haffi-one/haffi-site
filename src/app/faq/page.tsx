@@ -45,6 +45,10 @@ const Page = () => (
             answer="Once they choose a time slot, Haffi automatically adds it to your calendar and sends both you and the customer confirmation and reminder notifications, ensuring everyone stays on schedule. No more missed appointments or wasted time!"
           />
           <QuestionAndAnswer
+            question="Does Haffi support online payments for bookings?"
+            answer="While Haffi doesn't directly process online payments yet, it simplifies offline payment verification for your customers. They can upload a screenshot of their bank transfer confirmation, and Haffi's smart technology will check its validity, ensuring seamless booking confirmations for both you and your customers."
+          />
+          <QuestionAndAnswer
             question="What makes Haffi unique?"
             answer="WhatsApp business solutions from other services require you to loose your WhatsApp conversation history. Haffi just an additional tool that you can use on WhatsApp. This allows us to focus on a very specific and niche problem that can make a big difference in your business."
           />
