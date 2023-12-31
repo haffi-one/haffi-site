@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <title>Haffi - Simplified Automation for WhatsApp</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -107,12 +107,6 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="my-10 text-center">
-                <a
-                  href="/join-waitlist"
-                  className="transition-all ease-in-out delay-150 border-2 border-green-1 bg-gray-dark-1 text-green-1 hover:bg-green-1 hover:text-gray-dark-1 text-2xl font-semibold py-3 px-7 rounded-full inline-block"
-                >
-                  Join The Waitlist
-                </a>
                 <JoinWaitListLarge />
               </div>
               <div className="w-full flex flex-col gap-2 justify-center">

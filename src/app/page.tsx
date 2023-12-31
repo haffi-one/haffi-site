@@ -20,6 +20,7 @@ const Page = () => (
             src="/whatsapp-notifications.svg"
             width={222}
             height={212}
+            priority={false}
           />
         </div>
       </div>
