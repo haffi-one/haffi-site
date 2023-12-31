@@ -1,5 +1,10 @@
+import { TrackingProvider } from "@/lib/tracking";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
+import {
+  JoinWaitListLarge,
+  JoinWaitListSmall,
+} from "@/components/JoinWaitlist";
 
 export default function RootLayout({
   children,
@@ -65,6 +70,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <TrackingProvider />
         <nav className="max-w-[820px] mx-auto py-4 md:py-7 px-3 md:px-0 flex flex-row justify-between sticky top-0 bg-white/90 backdrop-blur-md">
           <a href="/">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -74,12 +80,7 @@ export default function RootLayout({
               className="h-[46px] w-auto"
             />
           </a>
-          <a
-            href="/join-waitlist"
-            className="transition-all ease-in-out delay-150 border-2 border-gray-dark-1 bg-transparent text-gray-dark-1 hover:border-green-1 hover:bg-green-1 font-bold px-4 py-2 rounded-full"
-          >
-            Join Waitlist
-          </a>
+          <JoinWaitListSmall />
         </nav>
         <main className="max-w-[820px] mx-auto px-3 md:px-0">{children}</main>
         <footer className="w-screen bg-gray-dark-1 pt-[100px] pb-[60px]">
@@ -112,6 +113,7 @@ export default function RootLayout({
                 >
                   Join The Waitlist
                 </a>
+                <JoinWaitListLarge />
               </div>
               <div className="w-full flex flex-col gap-2 justify-center">
                 <a

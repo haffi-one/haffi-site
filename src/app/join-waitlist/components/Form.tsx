@@ -3,6 +3,7 @@ import { EmailInput, WhatsAppNumberInput } from "@/components/Inputs";
 import Option from "@/components/Option";
 import { MouseEvent, useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
+import { track } from "@/lib/tracking";
 
 type FormType = "whatsapp" | "email";
 
@@ -18,6 +19,9 @@ const Form = () => {
     return () => {
       if (_type != type) {
         setType(_type);
+        track("waitlist_form.type_change.select", {
+          _type,
+        });
       }
     };
   };
@@ -29,6 +33,8 @@ const Form = () => {
   const onSubmit = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
       if (isInvalid) return;
+
+      track("waitlist_form.submit");
 
       fetch("/join-waitlist/add", {
         method: "POST",
