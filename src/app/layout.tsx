@@ -31,7 +31,7 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://haffi.one" />
         <meta property="og:site_name" content="Haffi" />
-        <meta property="og:image" content="social.png" />
+        <meta property="og:image" content="https://haffi.one/social.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
@@ -45,7 +45,7 @@ export default function RootLayout({
           name="twitter:description"
           content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
         />
-        <meta name="twitter:image" content="social.png" />
+        <meta name="twitter:image" content="https://haffi.one/social.png" />
         <meta
           name="twitter:image:alt"
           content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
