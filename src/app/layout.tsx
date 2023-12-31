@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>Haffi for WhatsApp Business</title>
+        <title>Haffi - Simplified Automation for WhatsApp</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
         <meta
@@ -55,9 +55,12 @@ export default function RootLayout({
         <nav className="max-w-[820px] mx-auto py-4 md:py-7 px-3 md:px-0 flex flex-row justify-between sticky top-0 bg-white/90 backdrop-blur-md">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img alt="Haffi Logo" src="/HAFFI.svg" className="h-[46px] w-auto" />
-          <button className="bg-gray-dark-1 font-medium text-green-1 px-4 py-2 rounded-full">
+          <a
+            href="/join-waitlist"
+            className="transition-all ease-in-out delay-150 border-2 border-gray-dark-1 bg-transparent text-gray-dark-1 hover:border-green-1 hover:bg-green-1 font-bold px-4 py-2 rounded-full"
+          >
             Join Waitlist
-          </button>
+          </a>
         </nav>
         <main className="max-w-[820px] mx-auto px-3 md:px-0">{children}</main>
         <footer className="w-screen bg-gray-dark-1 pt-[100px] pb-[60px]">
@@ -70,21 +73,26 @@ export default function RootLayout({
                 <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
                   The Secret weapons for your WhatsApp workflow
                 </p>
-                <p className="text-green-1 text-center text-[20px] leading-[29px] md:text-[22px] md:leading-[30px]">
-                  Automated reminders
+                <p className="text-green-1 text-center text-[17px] md:text-[20px] md:leading-[29px]">
+                  Automated customer reminders
+                  <br />
+                  Easy booking management
                   <br />
                   Interactive WhatsApp Experience
                   <br />
-                  Calendar integration <br />
+                  Business calendar integration <br />
                   and much, much more.
                 </p>
               </div>
               <div className="my-10 text-center">
-                <button className="bg-green-1 text-2xl font-semibold py-3 px-7 rounded-full inline-block">
+                <a
+                  href="/join-waitlist"
+                  className="transition-all ease-in-out delay-150 border-2 border-green-1 bg-gray-dark-1 text-green-1 hover:bg-green-1 hover:text-gray-dark-1 text-2xl font-semibold py-3 px-7 rounded-full inline-block"
+                >
                   Join Waitlist
-                </button>
+                </a>
               </div>
-              <p className="text-green-1 text-center opacity-80">
+              <p className="text-green-1 text-center opacity-80 ">
                 &copy; HAFFI.one 2023-2024
               </p>
             </section>

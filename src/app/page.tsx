@@ -85,8 +85,8 @@ const Page = () => (
           </p>
         </div>
 
-        <div className="mx-auto max-w-[450px] flex-shrink-0">
-          <div className="border-[8px] border-green-1 rounded-[35px] overflow-hidden ">
+        <div className="mx-auto max-w-[30vh] md:max-w-[390px] flex-shrink-0">
+          <div className="border-[6px] md:border-[8px] border-green-1 rounded-[35px] overflow-hidden ">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               alt="WhatsApp Workflow Animations"
