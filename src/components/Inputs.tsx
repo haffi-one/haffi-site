@@ -3,14 +3,25 @@ import { phone } from "phone";
 import { validate as email } from "email-validator";
 import { ChangeEvent, FocusEvent, useState } from "react";
 
-export const WhatsAppNumberInput = () => {
-  const [value, setValue] = useState("");
-  const [isInvalid, setIsInvalid] = useState(false);
+interface InputProps {
+  value: string;
+  isInvalid: boolean;
+  onValueChange: (value: string) => void;
+  setIsInvalid: (bool: boolean) => void;
+}
+
+export const WhatsAppNumberInput = ({
+  value,
+  isInvalid,
+  onValueChange,
+  setIsInvalid,
+}: InputProps) => {
   const validateInput = (e: FocusEvent<HTMLInputElement>) => {
-    setIsInvalid(!phone(value).isValid);
+    const _isInvalid = !phone(value).isValid;
+    setIsInvalid(_isInvalid);
   };
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
+    onValueChange(e.target.value);
     setIsInvalid(false);
   };
 
@@ -24,6 +35,7 @@ export const WhatsAppNumberInput = () => {
         }`}
         onBlur={validateInput}
         onChange={onChange}
+        value={value}
       />
       {isInvalid && (
         <p className="mt-2 text-red-500">Not a valid phone number</p>
@@ -32,14 +44,18 @@ export const WhatsAppNumberInput = () => {
   );
 };
 
-export const EmailInput = () => {
-  const [value, setValue] = useState("");
-  const [isInvalid, setIsInvalid] = useState(false);
+export const EmailInput = ({
+  value,
+  isInvalid,
+  onValueChange,
+  setIsInvalid,
+}: InputProps) => {
   const validateInput = (e: FocusEvent<HTMLInputElement>) => {
-    setIsInvalid(!email(value));
+    const _isInvalid = !email(value);
+    setIsInvalid(_isInvalid);
   };
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
+    onValueChange(e.target.value);
     setIsInvalid(false);
   };
 
@@ -53,6 +69,7 @@ export const EmailInput = () => {
         }`}
         onBlur={validateInput}
         onChange={onChange}
+        value={value}
       />
       {isInvalid && <p className="mt-2 text-red-500">Not a valid Email</p>}
     </>

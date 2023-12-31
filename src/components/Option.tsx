@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, MouseEvent } from "react";
 
 interface OptionProps {
   name: string;
@@ -8,6 +8,7 @@ interface OptionProps {
   title: string;
   description: string;
   children: React.ReactNode;
+  onSelect: (e: MouseEvent<HTMLInputElement>) => void;
 }
 const Option = ({
   imgSrc,
@@ -15,6 +16,7 @@ const Option = ({
   title,
   description,
   children,
+  onSelect,
 }: OptionProps) => {
   const radioRef = useRef<HTMLInputElement>(null);
   const onClick = () => {
@@ -40,6 +42,7 @@ const Option = ({
           value={name}
           name="option"
           ref={radioRef}
+          onClick={onSelect}
         ></input>
         <div className="overflow-hidden p-0 h-0 opacity-0 peer-checked:pt-4 peer-checked:h-auto peer-checked:opacity-100 transition-all duration-200">
           {children}
