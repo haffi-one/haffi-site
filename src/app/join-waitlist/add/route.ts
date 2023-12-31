@@ -29,6 +29,9 @@ export async function POST(request: NextRequest) {
   const apiUrl = `https://api.airtable.com/v0/${env.AIRBASE_BASE_ID}/${env.AIRBASE_TABLE_ID}`;
   const token = env.AIRBASE_TOKEN;
 
+  const forwarded = request.headers.get("x-forwarded-for");
+  const ipAddress = forwarded ? forwarded.split(/, /)[0] : request.ip;
+
   const repsonse = await fetch(apiUrl, {
     method: "POST",
     headers: {
@@ -41,10 +44,7 @@ export async function POST(request: NextRequest) {
           fields: {
             Contact: data.value,
             ContactType: data.type,
-            LocationCity: request.geo?.city || null,
-            LocationCountry: request.geo?.country || null,
-            LocationRegion: request.geo?.region || null,
-            IpAddress: request.ip,
+            IpAddress: ipAddress,
           },
         },
       ],
