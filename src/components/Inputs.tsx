@@ -1,7 +1,7 @@
 "use client";
 import { phone } from "phone";
 import { validate as email } from "email-validator";
-import { ChangeEvent, FocusEvent, useState } from "react";
+import { ChangeEvent, FocusEvent } from "react";
 
 interface InputProps {
   value: string;
