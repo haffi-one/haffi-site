@@ -28,10 +28,13 @@ export const WhatsAppNumberInput = ({
   return (
     <>
       <input
-        type="text"
-        placeholder="WA Business Phone Number"
+        type="type"
+        autoComplete="tel"
+        placeholder="e.g: +1 (000) 0000"
         className={` w-full border-2 border-gray-dark-2 rounded-lg px-4 py-3 text-gray-dark-1 ${
-          isInvalid ? "border-red-500 outline-none" : "outline-green-1"
+          isInvalid
+            ? "border-red-500 outline-none"
+            : "border-green-1 outline-none"
         }`}
         onBlur={validateInput}
         onChange={onChange}
@@ -65,7 +68,9 @@ export const EmailInput = ({
         type="text"
         placeholder="your@email.com"
         className={` w-full border-2 border-gray-dark-2 rounded-lg px-4 py-3 text-gray-dark-1 ${
-          isInvalid ? "border-red-500 outline-none" : "outline-green-1"
+          isInvalid
+            ? "border-red-500 outline-none"
+            : "border-green-1 outline-none"
         }`}
         onBlur={validateInput}
         onChange={onChange}

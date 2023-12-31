@@ -9,17 +9,22 @@ type FormType = "whatsapp" | "email";
 const Form = () => {
   const router = useRouter();
   const [type, setType] = useState<FormType>("whatsapp");
-  const [value, setValue] = useState("");
-  const [isInvalid, setIsInvalid] = useState(false);
+  const [valueWhatsapp, setValueWhatsApp] = useState("");
+  const [valueEmail, setValueEmail] = useState("");
+  const [isInvalidWhatsapp, setIsInvalidWhatsApp] = useState(false);
+  const [isInvalidEmail, setIsInvalidEmail] = useState(false);
+
   const handleOnSelect = (_type: FormType) => {
     return () => {
       if (_type != type) {
         setType(_type);
-        setValue("");
-        setIsInvalid(false);
       }
     };
   };
+
+  const isInvalid = type == "whatsapp" ? isInvalidWhatsapp : isInvalidEmail;
+  const formValue = type == "whatsapp" ? valueWhatsapp : valueEmail;
+  const cannotSubmit = formValue.trim() == "" || isInvalid;
 
   const onSubmit = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
@@ -29,7 +34,7 @@ const Form = () => {
         method: "POST",
         body: JSON.stringify({
           type,
-          value,
+          value: formValue,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -42,10 +47,9 @@ const Form = () => {
           }
         });
     },
-    [type, value, isInvalid, router]
+    [type, formValue, isInvalid, router]
   );
 
-  const cannotSubmit = value.trim() == "" || isInvalid;
   return (
     <>
       <div className="gap-5 w-full flex flex-col md:flex-row">
@@ -57,10 +61,10 @@ const Form = () => {
           onSelect={handleOnSelect("whatsapp")}
         >
           <WhatsAppNumberInput
-            value={value}
-            isInvalid={isInvalid}
-            onValueChange={setValue}
-            setIsInvalid={setIsInvalid}
+            value={valueWhatsapp}
+            isInvalid={isInvalidWhatsapp}
+            onValueChange={setValueWhatsApp}
+            setIsInvalid={setIsInvalidWhatsApp}
           />
         </Option>
         <Option
@@ -71,10 +75,10 @@ const Form = () => {
           onSelect={handleOnSelect("email")}
         >
           <EmailInput
-            value={value}
-            isInvalid={isInvalid}
-            onValueChange={setValue}
-            setIsInvalid={setIsInvalid}
+            value={valueEmail}
+            isInvalid={isInvalidEmail}
+            onValueChange={setValueEmail}
+            setIsInvalid={setIsInvalidEmail}
           />
         </Option>
       </div>
