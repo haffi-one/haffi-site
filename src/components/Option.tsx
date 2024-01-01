@@ -45,7 +45,7 @@ const Option = ({
             ref={radioRef}
             onClick={onSelect}
           ></input>
-          <div className="overflow-hidden p-0 h-0 opacity-0 peer-checked:pt-4 peer-checked:h-auto peer-checked:opacity-100 transition-all duration-200">
+          <div className="overflow-hidden p-0 h-0 opacity-0 peer-checked:pt-4 peer-checked:h-auto peer-checked:opacity-100 transition-all duration-200 flex flex-col gap-2">
             {children}
           </div>
         </div>

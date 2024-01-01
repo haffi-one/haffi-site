@@ -7,6 +7,7 @@ export async function POST(request: NextRequest) {
   const data = (await request.json()) as {
     type: "whatsapp" | "email";
     value: string;
+    businessName: string;
   };
 
   // additional layer of protection
@@ -22,6 +23,14 @@ export async function POST(request: NextRequest) {
     // email invalid
     return Response.json({
       error: "Email is invalid",
+      success: false,
+    });
+  }
+
+  if (data.businessName?.trim() == "") {
+    // empty business name
+    return Response.json({
+      error: "Business name required",
       success: false,
     });
   }
@@ -42,6 +51,7 @@ export async function POST(request: NextRequest) {
       records: [
         {
           fields: {
+            BusinessName: data.businessName,
             Contact: data.value,
             ContactType: data.type,
             IpAddress: ipAddress,

@@ -1,5 +1,9 @@
 "use client";
-import { EmailInput, WhatsAppNumberInput } from "@/components/Inputs";
+import {
+  EmailInput,
+  WhatsAppNumberInput,
+  BusinessNameInput,
+} from "@/components/Inputs";
 import Option from "@/components/Option";
 import { MouseEvent, useCallback, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -12,6 +16,7 @@ const Form = () => {
   const [type, setType] = useState<FormType>("whatsapp");
   const [valueWhatsapp, setValueWhatsApp] = useState("");
   const [valueEmail, setValueEmail] = useState("");
+  const [valueBusinessName, setValueBusinessName] = useState("");
   const [isInvalidWhatsapp, setIsInvalidWhatsApp] = useState(false);
   const [isInvalidEmail, setIsInvalidEmail] = useState(false);
 
@@ -28,7 +33,8 @@ const Form = () => {
 
   const isInvalid = type == "whatsapp" ? isInvalidWhatsapp : isInvalidEmail;
   const formValue = type == "whatsapp" ? valueWhatsapp : valueEmail;
-  const cannotSubmit = formValue.trim() == "" || isInvalid;
+  const cannotSubmit =
+    valueBusinessName.trim() == "" || formValue.trim() == "" || isInvalid;
 
   const onSubmit = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
@@ -41,6 +47,7 @@ const Form = () => {
         body: JSON.stringify({
           type,
           value: formValue,
+          businessName: valueBusinessName,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +60,7 @@ const Form = () => {
           }
         });
     },
-    [type, formValue, isInvalid, router]
+    [type, formValue, valueBusinessName, isInvalid, router]
   );
 
   return (
@@ -66,6 +73,10 @@ const Form = () => {
           description="Connect instantly and secure your waitlist spot"
           onSelect={handleOnSelect("whatsapp")}
         >
+          <BusinessNameInput
+            value={valueBusinessName}
+            onValueChange={setValueBusinessName}
+          />
           <WhatsAppNumberInput
             value={valueWhatsapp}
             isInvalid={isInvalidWhatsapp}
@@ -80,6 +91,10 @@ const Form = () => {
           description="Connect instantly and secure your waitlist spot"
           onSelect={handleOnSelect("email")}
         >
+          <BusinessNameInput
+            value={valueBusinessName}
+            onValueChange={setValueBusinessName}
+          />
           <EmailInput
             value={valueEmail}
             isInvalid={isInvalidEmail}
