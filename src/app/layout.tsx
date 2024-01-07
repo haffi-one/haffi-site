@@ -1,10 +1,6 @@
 import { TrackingProvider } from "@/lib/tracking";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
-import {
-  JoinWaitListLarge,
-  JoinWaitListSmall,
-} from "@/components/JoinWaitlist";
 import Nav from "@/components/Nav";
 
 export default function RootLayout({

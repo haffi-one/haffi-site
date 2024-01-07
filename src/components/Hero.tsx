@@ -12,7 +12,7 @@ const Hero = () => (
           managing appointments without adding complexity to your workflow
         </p>
 
-        <PreOrderBtn />
+        <PreOrderBtn eventName="hero_section.pre_order_btn_click" />
       </div>
 
       <div className="mx-auto w-full md:w-auto md:h-[60vh] flex-shrink-0">

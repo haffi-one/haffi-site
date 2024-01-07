@@ -1,3 +1,5 @@
+import PreOrderBtn from "./PreOrderBtn";
+
 const QuestionAndAnswer = ({
   question,
   answer,
@@ -50,6 +52,9 @@ const Faq = () => (
           question="Is my information secure on the waitlist?"
           answer="Absolutely. We prioritize your privacy and security. You can trust that your information is handled securely. If you wish to delete your information, you have the option to do so by contacting us at support@haffi.one."
         />
+      </div>
+      <div className="text-center">
+        <PreOrderBtn eventName="faq_section.pre_order_btn_click" />
       </div>
     </div>
   </section>
