@@ -17,6 +17,7 @@ const CtaSection = () => (
         <BulletItem content="Verify payments instantly with screenshots" />
         <BulletItem content="Manage bookings & customers all in one place" />
         <BulletItem content="Interactive WhatsApp Experience" />
+
       </div>
       <div className="text-center">
         <PreOrderBtn />

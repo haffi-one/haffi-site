@@ -8,8 +8,7 @@ const PreOrderBtn = () => (
       <span>$49 Pre-order</span>
     </a>
     <div className="text-gray-dark-2 text-sm flex flex-col gap-2 mt-2">
-      <p>Limited time offer for lifetime access to HaffiCal</p>
-      <p>Significant savings compared to the $240 per year subscriptions</p>
+      <p>Limited-time offer &ndash; Regular price $240/year.</p>
     </div>
   </div>
 );
