@@ -1,5 +1,5 @@
 import { TrackingProvider } from "@/lib/tracking";
-import "./globals.css";
+import "../../globals.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import Nav from "@/components/Nav";
 
@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>HaffiCal - Simplified Automation for WhatsApp</title>
+        <title>HaffiCal - WhatsApp Welcome Message Generator</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
         <meta
@@ -20,17 +20,17 @@ export default function RootLayout({
         />
         <meta
           name="description"
-          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Generate personalized WhatsApp Business greeting messages with HaffiCal. Streamline customer interactions, save time, and enhance your brand-customer relationships."
         />
         <meta
           name="keywords"
-          content="Haffi, HaffiCal, haffi Calendar, Booking App, WhatsApp, booking, appointment, Appointment Booking, WhatsApp Marketing, whatsapp market automation, WhatsApp Business Web, WhatsApp Web Business, free whatsapp business api, WA Business Web, Whatsapp Business automation, Automated WhatsApp messages, Automatically reply on WhatsApp, WhatsApp Booking System, Book appointments On WhatsApp, Whatsapp business greeting message, Broadcast message on whatsapp business, WhatsApp booking tool, Caribbean business software, Broadcast message on whatsapp business"
+          content="HaffiCal, WhatsApp Welcome Message, WhatsApp Business Greeting, Automated Messages, WhatsApp Marketing, 21 WhatsApp Business greeting, Greeting Message, Customer Engagement, WhatsApp Business Tool, How to set WhatsApp Welcome Message, WhatsApp Business Welcome Message Generator"
         />
 
         <meta property="og:title" content="HaffiCal for WhatsApp Business" />
         <meta
           property="og:description"
-          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Generate personalized WhatsApp Business greeting messages with HaffiCal. Streamline customer interactions, save time, and enhance your brand-customer relationships."
         />
         <meta property="og:url" content="https://haffi.one" />
         <meta property="og:site_name" content="HaffiCal" />
@@ -47,15 +47,18 @@ export default function RootLayout({
 
         <meta
           property="og:image:alt"
-          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Generate personalized WhatsApp Business greeting messages with HaffiCal. Streamline customer interactions, save time, and enhance your brand-customer relationships."
         />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="HaffiCal for WhatsApp Business" />
+        <meta
+          name="twitter:title"
+          content="HaffiCal - WhatsApp Welcome Message Generator"
+        />
         <meta
           name="twitter:description"
-          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Generate personalized WhatsApp Business greeting messages with HaffiCal. Streamline customer interactions, save time, and enhance your brand-customer relationships."
         />
         <meta
           name="twitter:image"
@@ -63,7 +66,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image:alt"
-          content="Streamline WhatsApp Bookings, Save Time & Grow Your Business"
+          content="Generate personalized WhatsApp Business greeting messages with HaffiCal. Streamline customer interactions, save time, and enhance your brand-customer relationships."
         />
       </head>
       <body>

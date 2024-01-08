@@ -1,0 +1,19 @@
+{
+  "data": [
+    { "value": "personalTouch", "display": "Personal Touch" },
+    { "value": "informativeWelcome", "display": "Informative Welcome" },
+    { "value": "callToAction", "display": "Call to Action" },
+    { "value": "helpfulHint", "display": "Helpful Hint" },
+    { "value": "acknowledgment", "display": "Acknowledgment" },
+    { "value": "gratitude", "display": "Gratitude" },
+    {
+      "value": "socialInvitation",
+      "display": "Social Invitation (with Emojis)"
+    },
+    { "value": "faqAnswer", "display": "FAQ Answer" },
+    {
+      "value": "customizedGreeting",
+      "display": "Customized Greeting (with Emojis)"
+    }
+  ]
+}
