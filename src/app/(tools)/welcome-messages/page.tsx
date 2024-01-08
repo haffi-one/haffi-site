@@ -1,3 +1,4 @@
+import CtaSection from "@/components/CtaSection";
 import Form from "./components/Form";
 
 const Page = () => (
@@ -19,7 +20,7 @@ const Page = () => (
             <p className="text-2xl font-semibold text-gray-dark-1">
               How to Set a greeting message
             </p>
-            <ol className="list-decimal mt-5 leading-[30px] text-gray-dark-1">
+            <ol className="list-decimal mt-5 leading-[30px] text-gray-dark-1 text-left pl-10">
               <li>Tap more options</li>
               <li>
                 Tap <strong>Business tools</strong> and then tap{" "}
@@ -66,6 +67,9 @@ const Page = () => (
         </div>
       </div>
     </header>
+    <div className="mb-10">
+      <CtaSection />
+    </div>
   </>
 );
 

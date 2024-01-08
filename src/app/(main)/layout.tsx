@@ -73,6 +73,15 @@ export default function RootLayout({
         <footer className="w-screen bg-slate-200 py-[60px]">
           <div className="max-w-[820px] mx-auto">
             <section>
+              <p className="font-semibold text-lg text-gray-dark-1">Tools</p>
+              <a
+                href="/welcome-messages"
+                className="hover:underline text-gray-dark-2"
+              >
+                WhatsApp Message Generator
+              </a>
+            </section>
+            <section>
               <p className="text-gray-dark-2 text-center opacity-80">
                 &copy; HAFFI.one 2024
               </p>
