@@ -9,14 +9,14 @@ const Form = () => {
   const [welcomeMessage, setWelcomeMessage] = useState<string>();
   const cannotSubmit = businessName.trim() == "" || tone.trim() == "";
   const onCopy = useCallback(
-    (e: MouseEvent<HTMLAnchorElement>) => {
+    async (e: MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
       if (welcomeMessage) {
         const type = "text/plain";
         const blob = new Blob([welcomeMessage], { type });
         const data = [new ClipboardItem({ [type]: blob })];
 
-        navigator.clipboard.write(data);
+        await navigator.clipboard.write(data);
         alert("Welcome Message Copied");
       }
     },
