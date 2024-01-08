@@ -12,7 +12,11 @@ const Form = () => {
     (e: MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
       if (welcomeMessage) {
-        navigator.clipboard.writeText(welcomeMessage);
+        const type = "text/plain";
+        const blob = new Blob([welcomeMessage], { type });
+        const data = [new ClipboardItem({ [type]: blob })];
+
+        navigator.clipboard.write(data);
         alert("Welcome Message Copied");
       }
     },
