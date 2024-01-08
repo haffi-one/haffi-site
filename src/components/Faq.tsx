@@ -57,6 +57,10 @@ const Faq = () => (
           question="How do you connect to my WhatsApp number?"
           answer="HaffiCal doesn't connect directly to your WhatsApp number. We provide a secure link for customer bookings without accessing your personal number."
         />
+        <QuestionAndAnswer
+          question="Can I get a refund?"
+          answer="Yes you can. Send an email to support@haffi.one requesting a refund with the email you made the purchase with. Once refunded you will no longer have early access to HaffiCal"
+        />
       </div>
       <div className="text-center">
         <PreOrderBtn eventName="faq_section.pre_order_btn_click" />
