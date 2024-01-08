@@ -12,5 +12,9 @@ export const TrackingProvider = () => {
 };
 
 export const track = (event_name: string, properties?: Dict) => {
-  mixpanel.track(event_name, properties);
+  try {
+    mixpanel.track(event_name, properties);
+  } catch (e) {
+    console.warn("Tracking failed", e);
+  }
 };

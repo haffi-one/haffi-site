@@ -2,6 +2,7 @@
 import { MouseEvent, useCallback, useState } from "react";
 import toneOptions from "./FormToneOptions.json";
 import messages from "./messages.json";
+import { track } from "@/lib/tracking";
 
 const Form = () => {
   const [businessName, setBusinessName] = useState("");
@@ -12,6 +13,7 @@ const Form = () => {
     async (e: MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
       if (welcomeMessage) {
+        track("welcome_message.copied");
         const type = "text/plain";
         const blob = new Blob([welcomeMessage], { type });
         const data = [new ClipboardItem({ [type]: blob })];
@@ -24,6 +26,7 @@ const Form = () => {
   );
   const onGenerate = useCallback(() => {
     if (messages.hasOwnProperty(tone)) {
+      track("welcome_message.generated");
       // @ts-ignore
       const examples = messages[tone];
       const _welcomeMessage =

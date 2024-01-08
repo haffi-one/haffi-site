@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>HaffiCal - Simplified Automation for WhatsApp</title>
+        <title>HaffiCal - Appointment Scheduling for WhatsApp Business</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
         <meta
@@ -24,7 +24,7 @@ export default function RootLayout({
         />
         <meta
           name="keywords"
-          content="Haffi, HaffiCal, haffi Calendar, Booking App, WhatsApp, booking, appointment, Appointment Booking, WhatsApp Marketing, whatsapp market automation, WhatsApp Business Web, WhatsApp Web Business, free whatsapp business api, WA Business Web, Whatsapp Business automation, Automated WhatsApp messages, Automatically reply on WhatsApp, WhatsApp Booking System, Book appointments On WhatsApp, Whatsapp business greeting message, Broadcast message on whatsapp business, WhatsApp booking tool, Caribbean business software, Broadcast message on whatsapp business"
+          content="Haffi, HaffiCal, haffi Calendar, Booking App, WhatsApp, booking, appointment, Appointment Booking, WhatsApp Marketing, whatsapp market automation, WhatsApp Business Web, WhatsApp Web Business, free whatsapp business api, WA Business Web, Whatsapp Business automation, Automated WhatsApp messages, Automatically reply on WhatsApp, WhatsApp Booking System, Book appointments On WhatsApp, Whatsapp business greeting message, Broadcast message on whatsapp business, WhatsApp booking tool, Caribbean business software, Broadcast message on whatsapp business, whatsapp schedule appointments"
         />
 
         <meta property="og:title" content="HaffiCal for WhatsApp Business" />
