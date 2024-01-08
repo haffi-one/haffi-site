@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>HaffiCal - Appointment Scheduling for WhatsApp Business</title>
+        <title>WhatsApp Business Appointment Scheduling - HaffiCal</title>
         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
         <meta
@@ -75,7 +75,7 @@ export default function RootLayout({
             <section>
               <p className="font-semibold text-lg text-gray-dark-1">Tools</p>
               <a
-                href="/welcome-messages"
+                href="/whatsapp-welcome-messages"
                 className="hover:underline text-gray-dark-2"
               >
                 WhatsApp Message Generator
