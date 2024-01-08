@@ -22,35 +22,40 @@ const Faq = () => (
 
       <div className="flex flex-col gap-6">
         <QuestionAndAnswer
-          question="What is Haffi?"
-          answer="Haffi is a specialized solution designed to streamline the booking
+          question="What is HaffiCal?"
+          answer="HaffiCal is a tool designed to streamline the booking
               process for businesses using WhatsApp for Business. It simplifies
               appointment scheduling, making it easier for businesses to manage
               bookings and communicate with customers."
         />
+
         <QuestionAndAnswer
-          question="How does Haffi work?"
-          answer=" When a customer messages your WhatsApp Business number, Haffi takes over! They'll receive a friendly welcome message with options to book appointments directly through WhatsApp. No more endless texting back and forth to schedule!"
+          question="Can I use my existing WhatsApp number"
+          answer="Yes, HaffiCal integrates seamlessly into your existing WhatsApp business."
+        />
+        <QuestionAndAnswer
+          question="How does HaffiCal work?"
+          answer="When a customer messages your WhatsApp Business number, HaffiCal takes over, offering a simplified booking process."
         />
         <QuestionAndAnswer
           question="How will I know when a customer books with me?"
-          answer="Once they choose a time slot, Haffi automatically adds it to your calendar and sends both you and the customer confirmation and reminder notifications, ensuring everyone stays on schedule. No more missed appointments or wasted time!"
+          answer="HaffiCal automatically adds bookings to your calendar, sending both you and the customer confirmations and reminders."
         />
         <QuestionAndAnswer
-          question="Does Haffi support online payments for bookings?"
-          answer="While Haffi doesn't directly process online payments yet, it simplifies offline payment verification for your customers. They can upload a screenshot of their bank transfer confirmation, and Haffi's smart technology will check its validity, ensuring seamless booking confirmations for both you and your customers."
+          question="Does HaffiCal support online payments for bookings?"
+          answer="While HaffiCal doesn't directly process online payments yet, it simplifies offline payment verification for your customers. They can upload a screenshot of their bank transfer confirmation, and HaffiCal's smart technology will check its validity, ensuring seamless booking confirmations for both you and your customers."
         />
         <QuestionAndAnswer
-          question="What makes Haffi unique?"
-          answer="WhatsApp business solutions from other services require you to loose your WhatsApp conversation history. Haffi just an additional tool that you can use on WhatsApp. This allows us to focus on a very specific and niche problem that can make a big difference in your business."
+          question="What makes HaffiCal unique?"
+          answer="WhatsApp business solutions from other services require you to change your WhatsApp number. HaffiCal just an additional tool that you can use on WhatsApp. This allows us to focus on a very specific and niche problem that can make a big difference in your business."
         />
         <QuestionAndAnswer
-          question="How can businesses benefit from Haffi?"
-          answer="Haffi simplifies the booking process, reduces the risk of double-bookings through calendar integration, and enhances customer communication. Businesses can customize their booking workflows and receive notifications via email or WhatsApp about analytics and milestones."
+          question="Does HaffiCal access my personal WhatsApp information or chats?"
+          answer="No, HaffiCal does not access any of your personal WhatsApp information or chats. We operate by providing a secure link that businesses can expose for their customers to book appointments. Your privacy and the confidentiality of your messages are of utmost importance to us. HaffiCal focuses solely on streamlining the appointment booking process, ensuring a seamless experience without compromising your personal data."
         />
         <QuestionAndAnswer
-          question="Is my information secure on the waitlist?"
-          answer="Absolutely. We prioritize your privacy and security. You can trust that your information is handled securely. If you wish to delete your information, you have the option to do so by contacting us at support@haffi.one."
+          question="How do you connect to my WhatsApp number?"
+          answer="HaffiCal doesn't connect directly to your WhatsApp number. We provide a secure link for customer bookings without accessing your personal number."
         />
       </div>
       <div className="text-center">
