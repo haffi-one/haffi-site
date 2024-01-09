@@ -59,7 +59,7 @@ const Faq = () => (
         />
         <QuestionAndAnswer
           question="Can I get a refund?"
-          answer="Yes you can. Send an email to support@haffi.one requesting a refund with the email you made the purchase with. Once refunded you will no longer have early access to HaffiCal"
+          answer="Yes you can. Send an email to support@haffi.com requesting a refund with the email you made the purchase with. Once refunded you will no longer have early access to HaffiCal"
         />
       </div>
       <div className="text-center">

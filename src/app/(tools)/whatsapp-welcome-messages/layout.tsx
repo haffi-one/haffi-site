@@ -32,15 +32,15 @@ export default function RootLayout({
           property="og:description"
           content="Generate personalized WhatsApp Business greeting messages with HaffiCal. Streamline customer interactions, save time, and enhance your brand-customer relationships."
         />
-        <meta property="og:url" content="https://haffi.one" />
+        <meta property="og:url" content="https://haffical.com" />
         <meta property="og:site_name" content="HaffiCal" />
         <meta
           property="og:image"
-          content="https://haffi.one/social-share.jpg"
+          content="https://haffical.com/social-share.jpg"
         />
         <meta
           property="og:image:secure_url"
-          content="https://haffi.one/social-share.jpg"
+          content="https://haffical.com/social-share.jpg"
         />
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="566" />
@@ -62,7 +62,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://haffi.one/social-share.jpg"
+          content="https://haffical.com/social-share.jpg"
         />
         <meta
           name="twitter:image:alt"
