@@ -7,7 +7,7 @@ const PreOrderBtn = ({ eventName }: { eventName: string }) => {
     if (typeof window !== "undefined") {
       track(eventName);
       window.location.href =
-        "https://haffical.lemonsqueezy.com/checkout/buy/67375f25-fbee-4463-9e6f-c0e01c2aa3bc";
+        "https://haffical.lemonsqueezy.com/checkout/buy/72416f17-55d6-4d17-b0fb-17a30c466c9a";
     }
   };
   return (
