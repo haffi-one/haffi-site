@@ -1,7 +1,6 @@
 export async function GET(request: Request) {
   const pathName = request.nextUrl.pathname;
   const match = pathName.match(/@([^\/]+|$)/);
-  console.log("Hiii", match[1]);
   if (!match) {
     return;
   }
