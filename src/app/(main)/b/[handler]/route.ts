@@ -4,9 +4,8 @@ export async function GET(request: Request) {
     return;
   }
   const chatLinkUrl =
-    "https://kuhw8l4ake.execute-api.us-east-1.amazonaws.com/api/business/chat_link/" +
+    "https://vwluh3k6pg.execute-api.us-east-1.amazonaws.com/api/business/chat_link/" +
     match[1];
-  console.log("chat_link_url", chatLinkUrl);
   const response = await fetch(chatLinkUrl, {
     method: "post",
     redirect: "manual",
