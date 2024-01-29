@@ -1,11 +1,7 @@
 "use client";
 import { track } from "@/lib/tracking";
-import { useCountDown } from "./PreOrderBtn/hook";
-import CountItem from "./PreOrderBtn/CountItem";
 
 const PreOrderBtn = ({ eventName }: { eventName: string }) => {
-  const countdown = useCountDown("2024-01-20 00:00:00");
-  console.log("countdown", countdown);
   const onClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     if (typeof window !== "undefined") {
@@ -25,36 +21,6 @@ const PreOrderBtn = ({ eventName }: { eventName: string }) => {
           <span className="font-normal line-through mr-2">$240</span>
           <span>$49 Pre-order</span>
         </a>
-      </div>
-      <div>
-        <div className="text-gray-dark-2 mt-2 font-medium inline-block rounded-full">
-          <p>
-            Offer expires in{" "}
-            <CountItem
-              count={countdown.days}
-              wordPlural="days"
-              wordSingular="day"
-            />
-            :
-            <CountItem
-              count={countdown.hours}
-              wordPlural="hours"
-              wordSingular="hour"
-            />
-            :
-            <CountItem
-              count={countdown.minutes}
-              wordPlural="minutes"
-              wordSingular="minute"
-            />
-            :
-            <CountItem
-              count={countdown.seconds}
-              wordPlural="seconds"
-              wordSingular="second"
-            />
-          </p>
-        </div>
       </div>
     </>
   );
